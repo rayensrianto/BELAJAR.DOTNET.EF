@@ -1,6 +1,6 @@
 # BELAJAR.DOTNET.EF
  
-## ENTITY FRAMEWORK BASIC 
+## PENGENALAN ENTITY FRAMEWORK 
 
 ### Apa itu Entity Framework?
 EF adalah framework open source ORM untuk .Net apps yang memungkinan programmer berkerja dengan realtional data menggunakan domain-specific object tanpa harus fokus ke table dan kolom dimana data itu di simpan.
