@@ -3,7 +3,7 @@
 ## PENGENALAN ENTITY FRAMEWORK 
 
 ### Apa itu Entity Framework?
-EF adalah framework open source ORM untuk .Net apps yang memungkinan programmer berkerja dengan realtional data menggunakan domain-specific object tanpa harus fokus ke table dan kolom dimana data itu di simpan.
+EF adalah framework open source ORM untuk .Net apps yang memungkinan programmer berkerja dengan relational data menggunakan domain-specific object tanpa harus fokus ke table dan kolom dimana data itu di simpan.
 EF mengurangin code yang biasanya di tulis oleh programmer untuk akses database.
 
 ### Apa itu ORM?
@@ -28,5 +28,19 @@ Tetapi, EF dapat melakukan itu semua dengan otomatis.
 8. Caching : EF sudah include first level of caching, sehingga saat pengulangan query akan mengembalikan data dari cache.
 9. Built-in Conventions : 
 10. Configurations : EF allows us to configure the EF model by using data annotation attributes or Fluent API to override default conventions.
+
+## ARSITEKTUR EF
+
+### Arsitektur EF
+Arsitektur EF itu terdiri dari komponen2 di bawah ini:
+1. EDM (Entity Data Model)
+EDM adalah mengabstraksi logic dan relational.
+
+2. LINQ to Entities
+3. Entity SQL
+4. Object Service Layer
+5. Entity Client Data Provider
+6. ADO.NET Data Provider
+
 
 ## DATABASE FIRST APPROACH
