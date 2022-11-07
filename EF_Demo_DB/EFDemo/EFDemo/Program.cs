@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,11 @@ namespace EFDemo
 
                     Console.WriteLine();
                 }
+
+                var employee = DBEntities.Employees.Find(1);
+                var employeeType = ObjectContext.GetObjectType(employee.GetType());
+                Console.WriteLine("FullName of Employee Master Type :" + employeeType.FullName);
+
                 Console.ReadKey();
             }
         }

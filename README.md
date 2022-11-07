@@ -35,12 +35,39 @@ Tetapi, EF dapat melakukan itu semua dengan otomatis.
 Arsitektur EF itu terdiri dari komponen2 di bawah ini:
 1. EDM (Entity Data Model)
 EDM adalah mengabstraksi logic dan relational.
-
 2. LINQ to Entities
 3. Entity SQL
 4. Object Service Layer
 5. Entity Client Data Provider
 6. ADO.NET Data Provider
 
+## EF CONTEXT CLASS
+
+### Apa itu Context Class di EF?
+Class utama yang bertugas untuk melakukan interaksi antara data dengan object adalah System.Data.Entity.DbContext.
+
+### Apa itu entity di EF?
+Sebuah class yang di masukan sebagai tipe properti DbSet<TEntity> di class context.
+EF me-mapping masing-masing entity ke masing table di database beserta relasi-relasi nya.
+
+Di dalam entity ada:
+- Scalar property : nama nama column untuk menghubungkan dengan column2 yang ada di table pada database.
+- Navigation property: relasi dari table tersebut ke table lain
+
+Ada dua tipe entity di EF.
+- POCO Entities
+- Dynamic Proxy Entities
+
+### Entity States
+EF membuat status untuk masing-masing entity selama entity itu di pakai dan digunakan menggunakan context class.
+Added: The entity is marked as added.
+Deleted: The entity is marked as deleted.
+Modified: The entity has been modified.
+Unchanged: The entity hasn’t been modified
+Detached: The entity isn’t tracked.
 
 ## DATABASE FIRST APPROACH
+
+### Pengenalan DB First 
+- coding
+
