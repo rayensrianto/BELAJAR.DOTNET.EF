@@ -43,8 +43,21 @@ namespace DBFirstApproach
 
             foreach (Student student in listStudents)
             {
-                Console.WriteLine($" Name = {student.FirstName} {student.LastName}, Email = {student.StudentAddress?.Email}, Mobile = {student.StudentAddress?.Mobile}");
+                Console.WriteLine($" Id = {student.StudentId}, Name = {student.FirstName} {student.LastName}, Email = {student.StudentAddress?.Email}, Mobile = {student.StudentAddress?.Mobile}");
             }
+        }
+
+        public void AttachMethod()
+        {
+            //creating new student
+            var student = new Student { 
+                FirstName = "kurt",
+                LastName = "cobain"
+            };
+
+            //attaching the entity
+            context.Students.Attach(student);
+            context.SaveChanges();
         }
 
     }

@@ -71,3 +71,10 @@ Detached: The entity isn’t tracked.
 ### Pengenalan DB First 
 - coding
 
+### Eager Loading
+Eager Loading adalah sebuah proses dimana EF memuat entity-entity yang berhubungan dengan entity utama.
+Sehingga kita tidak perlu membuat query baru lagi untuk entity-entity yang berhubungan dengan entity utama.
+
+### Lazy Loading
+Lazy loading adalah sifat default dari EF, yaitu menampilkan entity child atau related entity ketika entity tersebut di tentukan/di panggil.
+Lazy loading bisa di non aktifkan dengan beberapa cara.
